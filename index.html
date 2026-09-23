@@ -17,7 +17,23 @@ h2{font-size:clamp(34px,4.5vw,50px);line-height:1;letter-spacing:-.045em;margin:
 .research{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:28px}.research-card{padding:18px}.research-img{width:100%;height:205px;object-fit:cover;border-radius:10px;border:1px solid var(--line);transition:transform .55s cubic-bezier(.2,.7,.2,1)}.stat{font-size:52px;font-weight:800;line-height:1;margin:7px 0}.small{font-size:13px;color:var(--muted)}
 .resume-section{padding:64px 0}.resume-card{display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}.resume-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(16,23,23,.09)}.resume-card h3{margin:0 0 7px;font-size:24px}.resume-card p{margin:0;color:#4b5959}.resume-action{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;padding:12px 18px;border:1px solid var(--ink);border-radius:999px;background:var(--ink);color:#fff;font-size:14px}.resume-action:hover{background:var(--accent);border-color:var(--accent)}footer{padding:62px 0}.contact{display:flex;justify-content:space-between;gap:40px;align-items:end}.contact h2{max-width:650px}.footerlinks{display:grid;grid-template-columns:1fr 1fr;gap:18px 34px;font-size:19px;font-weight:600;align-items:center}.footerlinks a{white-space:nowrap}.footerlinks a:last-child{color:#667373;font-weight:500}.footerlinks a:hover{color:var(--accent)}
 .modal{position:fixed;inset:0;z-index:100;background:rgba(10,17,17,.66);display:none;align-items:center;justify-content:center;padding:24px}.modal.show{display:flex}.modal-box{width:min(1000px,100%);max-height:92vh;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:18px;position:relative}.modal-close{position:absolute;right:18px;top:18px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:22px;cursor:pointer;z-index:2}.modal-grid{display:grid;grid-template-columns:.9fr 1.1fr}.modal-main-img{width:100%;height:100%;min-height:460px;object-fit:cover}.modal-content{padding:34px}.modal-content h2{font-size:38px;margin-bottom:13px}.modal-content p{color:#455353}.detail-row{border-top:1px solid var(--line);padding:16px 0;margin-top:22px}.detail-row strong{display:block;font:12px ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.gallery img{width:100%;height:125px;object-fit:cover;border:1px solid var(--line);border-radius:8px}
-.education-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:28px}.education-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-height:190px;transition:transform .35s ease,box-shadow .35s ease}.education-card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(16,23,23,.08)}.education-year{font:13px ui-monospace,SFMono-Regular,Consolas,monospace;font-weight:600;letter-spacing:.12em;color:#687676;margin-bottom:24px}.education-card h3{font-size:20px;line-height:1.2;margin:0 0 10px}.education-school{color:#566565;margin:0;line-height:1.5}.education-result{margin-top:22px;font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:#657373}.education-result strong{color:var(--ink);font-size:14px}@media(max-width:850px){
+.education-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:28px}.education-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-height:190px;transition:transform .35s ease,box-shadow .35s ease}.education-card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(16,23,23,.08)}.education-year{font:13px ui-monospace,SFMono-Regular,Consolas,monospace;font-weight:600;letter-spacing:.12em;color:#687676;margin-bottom:24px}.education-card h3{font-size:20px;line-height:1.2;margin:0 0 10px}.education-school{color:#566565;margin:0;line-height:1.5}.education-result{margin-top:22px;font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:#657373}.education-result strong{color:var(--ink);font-size:14px}
+/* Light / dark mode */
+.theme-toggle{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.72);color:var(--ink);font-size:17px;line-height:1;cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease,transform .25s ease;margin-left:18px}.theme-toggle:hover{transform:translateY(-1px)}
+body.dark{--bg:#111716;--ink:#eef5f2;--muted:#9aa9a5;--line:#2b3734;--card:rgba(24,32,30,.9);--accent:#20c9a5;background:linear-gradient(135deg,#101514 0%,#14211e 48%,#181622 100%);color:var(--ink)}
+body.dark:before{background:#155447;opacity:.22}body.dark:after{background:#3a3159;opacity:.22}
+body.dark nav{background:rgba(16,21,20,.94);border-color:var(--line)}
+body.dark .hero p,body.dark .lead,body.dark .about-copy p,body.dark .project p,body.dark .role-card p,body.dark .resume-card p,body.dark .muted,body.dark .education-school,body.dark .small{color:#aebbb7}
+body.dark .card,body.dark .project,body.dark .role-card,body.dark .research-card,body.dark .resume-card,body.dark .education-card{background:var(--card);border-color:var(--line)}
+body.dark .tag,body.dark .project-tag{background:#18211f;border-color:var(--line);color:#aebbb7}
+body.dark .btn{border-color:#d9e5e1}body.dark .btn.primary{background:#eef5f2;color:#111716}
+body.dark .resume-action{background:#eef5f2;color:#111716;border-color:#eef5f2}body.dark .resume-action:hover{background:var(--accent);border-color:var(--accent);color:#07120f}
+body.dark .modal{background:rgba(0,0,0,.76)}body.dark .modal-box{background:#111716;border-color:var(--line)}body.dark .modal-close{background:#1a2321;color:#eef5f2;border-color:var(--line)}
+body.dark .theme-toggle{background:#1a2321;color:#eef5f2;border-color:#394642}
+body.dark .project-tag{color:#aebbb7}
+body.dark .footerlinks a:last-child{color:#9aa9a5}
+
+@media(max-width:850px){
 nav .inner{height:60px;padding:0 18px}.brand{font-size:16px}.links{gap:12px}.links a{font-size:12px}
 .hero{grid-template-columns:1fr;min-height:auto;padding-top:72px;padding-bottom:64px;gap:34px}.hero h1{font-size:clamp(40px,11vw,54px);line-height:1}.hero p{font-size:17px;line-height:1.6}.portrait{order:2}.portrait img{width:100%;max-width:380px;height:auto;aspect-ratio:4/5;margin:0 auto;border-radius:16px}
 section{padding:64px 0}.wrap{width:min(100% - 32px,1120px);padding:0}
@@ -37,7 +53,7 @@ h2{font-size:clamp(34px,9vw,46px);line-height:1.02}.lead{font-size:17px;line-hei
 @media (hover:none), (pointer:coarse){body,a,.btn,.project,.role-card,.research-card,.modal-close{cursor:auto!important}}\n</style>
 </head>
 <body>
-<nav><div class="inner wrap"><a class="brand" href="#home">Abhinav Shaji Kumar<span>.</span></a><div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="inner wrap"><a class="brand" href="#home">Abhinav Shaji Kumar<span>.</span></a><div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">☾</button></div></nav>
 <main>
 <section id="home"><div class="wrap hero"><div><div class="eyebrow">Mechatronics &amp; Automation Engineer</div><h1>Engineering ideas into <em>working systems.</em></h1><p>I build across mechanical design, automation, machine vision, electronics, and system integration, with a strong interest in automotive and applied robotics.</p><div class="actions"><a class="btn primary" href="#projects">Explore projects</a><a class="btn" href="#contact">Contact me</a></div></div><div class="portrait"><img src="assets/portrait.jpg" alt="Abhinav Shaji Kumar"></div></div></section>
 
@@ -82,5 +98,18 @@ function openDetail(k){const d=D[k];if(!d)return;modalImg.src=d.img||"";modalImg
 function closeDetail(){modal.classList.remove("show");modal.setAttribute("aria-hidden","true");document.body.classList.remove("lock")}
 document.querySelectorAll("[data-detail]").forEach(x=>x.addEventListener("click",()=>openDetail(x.dataset.detail)));
 document.getElementById("close").addEventListener("click",closeDetail);modal.addEventListener("click",e=>{if(e.target===modal)closeDetail()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail()});
+</script>
+
+<script>
+const themeToggle=document.getElementById("themeToggle");
+const savedTheme=localStorage.getItem("portfolio-theme");
+if(savedTheme==="dark"){document.body.classList.add("dark");themeToggle.textContent="☀";themeToggle.setAttribute("aria-label","Switch to light mode");themeToggle.setAttribute("title","Switch to light mode")}
+themeToggle.addEventListener("click",()=>{
+  const dark=document.body.classList.toggle("dark");
+  localStorage.setItem("portfolio-theme",dark?"dark":"light");
+  themeToggle.textContent=dark?"☀":"☾";
+  themeToggle.setAttribute("aria-label",dark?"Switch to light mode":"Switch to dark mode");
+  themeToggle.setAttribute("title",dark?"Switch to light mode":"Switch to dark mode");
+});
 </script>
 </body></html>
